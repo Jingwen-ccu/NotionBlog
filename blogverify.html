@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>網址密碼認證</title>
+		<body style="background-color: #18232F; color: white;"></body>
+    <script>
+      localStorage.setItem("password", "20001008");
+      
+      function checkPassword() {
+        var password = document.getElementById("password").value;
+        if (password == localStorage.getItem("password")) {
+		  window.location.href = "https://humorous-cylinder-6ae.notion.site/Jing-Wen-Blog-067d55ed77814b0cb5c97db3486e8ee8";
+        } else {
+          alert("密碼錯誤，請重新輸入。");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>個人Blog網址密碼認證</h1>
+    <p>請輸入密碼以訪問Blog：</p>
+	<p>懶得架伺服器，所以這個網站毫無安全性哈哈！</p>
+	<p>(不想被陌生人看到，所以密碼在第一個精選限動唷！)</p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">密碼驗證</button>
+  </body>
+</html>
